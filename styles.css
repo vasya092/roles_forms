@@ -1,1 +1,64 @@
 #popup{display:none;}
+.form-frame {
+    width: 46%;
+    border: 1px solid #dfdfdf;
+    float: left;
+    padding: %;
+    padding: 10px;
+    margin: 25px 5px;
+}
+#roleForm input#user-role {
+    width: 50%;
+    padding: 4px;
+}
+.btn{
+    background: #e7e7e7;
+    border-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 25px;
+    cursor: pointer;
+}
+.input-user {
+    width: 38%;
+    padding: 4px;
+}
+table {
+    border: 1px solid #ccc;
+}
+td {
+    padding: 5px 17px;
+    border-bottom: 1px solid #ccc;
+    border-collapse: collapse;
+}
+tr:nth-child(2n) {
+    background-color: #ebebeb;
+}
+#table-place{
+float: left;
+margin: 0px 5px;
+width:100%;
+}
+#btn-refresh{border-bottom:0px;}
+#result{    
+    width: 14%;
+    position: fixed;
+    visibility: hidden;
+    top: 25%;
+    padding: 13px;
+    left: 42%;
+    background: #e5e5e5;
+    color: #000000;
+    text-align: center;
+}
+select#select-role {
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    padding: 10px 100px;
+}
+div#popup {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background: #05050547;
+}

@@ -9,6 +9,9 @@ function roleUpdate(){
         },
         body: 'rolename='+roleName
     }).then(response => {
+        let result = document.getElementById("result");
+        result.setAttribute('style','visibility:visible');
+        setTimeout(() => result.setAttribute('style','visibility:hidden'), 1500);
         document.getElementById("result").textContent="Roletype added";
     });
 }

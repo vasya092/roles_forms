@@ -19,7 +19,11 @@ const buildSelectList = data =>
     select.insertBefore(blankOption, select.firstChild);
 };
   
- 
+window.onclick = function(event) {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+};
   input.onfocus = function() {
     removeOptions(select);
   

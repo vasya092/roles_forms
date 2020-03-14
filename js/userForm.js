@@ -10,6 +10,9 @@ function userUpdate(){
         },
         body: 'username='+username+'&roleid='+userRoleId
     }).then(response => {
+        let result = document.getElementById("result");
+        result.setAttribute('style','visibility:visible');
+        setTimeout(() => result.setAttribute('style','visibility:hidden'), 1500);
         document.getElementById("result").textContent="User added";
     });
 }
