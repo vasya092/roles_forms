@@ -3,7 +3,7 @@ document.getElementById("btn-refresh").addEventListener("click",UpdateTable);
 
 function UpdateTable()
 {
-fetch('db/get_users.php')
+fetch('db/get_user_table.php')
   .then((response) => {
     return response.json();
   })
@@ -15,7 +15,7 @@ fetch('db/get_users.php')
             }
         for (var i = 0; i < Object.keys(data).length; i++) {
             var tr = "<tr>";
-            tr += "<td>" + data[i].username + "</td>" + "<td>" + data[i].id.toString() + "</td></tr>";
+            tr += "<td>" + data[i].username + "</td>" + "<td>" + data[i].rolename + "</td></tr>";
             tbody.innerHTML += tr;
         };
   });
